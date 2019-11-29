@@ -1,0 +1,442 @@
+fileFormatVersion: 2
+guid: 38b05f1623b538d4182eba5009550217
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: alienBeige_0
+  - first:
+      213: 21300002
+    second: alienBeige_1
+  - first:
+      213: 21300004
+    second: alienBeige_2
+  - first:
+      213: 21300006
+    second: alienBeige_3
+  - first:
+      213: 21300008
+    second: alienBeige_4
+  - first:
+      213: 21300010
+    second: alienBeige_5
+  - first:
+      213: 21300012
+    second: alienBeige_6
+  - first:
+      213: 21300014
+    second: alienBeige_7
+  - first:
+      213: 21300016
+    second: alienBeige_8
+  - first:
+      213: 21300018
+    second: alienBeige_9
+  - first:
+      213: 21300020
+    second: alienBeige_10
+  - first:
+      213: 21300022
+    second: alienBeige_11
+  - first:
+      213: 21300024
+    second: alienBeige_12
+  - first:
+      213: 21300026
+    second: alienBeige_13
+  - first:
+      213: 21300028
+    second: alienBeige_14
+  - first:
+      213: 21300030
+    second: alienBeige_15
+  - first:
+      213: 21300032
+    second: alienBeige_16
+  - first:
+      213: 21300034
+    second: alienBeige_17
+  - first:
+      213: 21300036
+    second: alienBeige.png
+  - first:
+      213: 21300038
+    second: alienBeige_climb1.png
+  - first:
+      213: 21300040
+    second: alienBeige_climb2.png
+  - first:
+      213: 21300042
+    second: alienBeige_duck.png
+  - first:
+      213: 21300044
+    second: alienBeige_hurt.png
+  - first:
+      213: 21300046
+    second: alienBeige_jump.png
+  - first:
+      213: 21300048
+    second: alienBeige_stand.png
+  - first:
+      213: 21300050
+    second: alienBeige_swim1.png
+  - first:
+      213: 21300052
+    second: alienBeige_swim2.png
+  - first:
+      213: 21300054
+    second: alienBeige_walk1.png
+  - first:
+      213: 21300056
+    second: alienBeige_walk2.png
+  - first:
+      213: 21300058
+    second: alienBeige
+  - first:
+      213: 21300060
+    second: alienBeige_climb1
+  - first:
+      213: 21300062
+    second: alienBeige_climb2
+  - first:
+      213: 21300064
+    second: alienBeige_duck
+  - first:
+      213: 21300066
+    second: alienBeige_hurt
+  - first:
+      213: 21300068
+    second: alienBeige_jump
+  - first:
+      213: 21300070
+    second: alienBeige_stand
+  - first:
+      213: 21300072
+    second: alienBeige_swim1
+  - first:
+      213: 21300074
+    second: alienBeige_swim2
+  - first:
+      213: 21300076
+    second: alienBeige_walk1
+  - first:
+      213: 21300078
+    second: alienBeige_walk2
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: 16
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: alienBeige
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 325
+        width: 66
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5305410000000000800000000000000
+      internalID: 21300058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alienBeige_climb1
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 417
+        width: 66
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5305410000000000800000000000000
+      internalID: 21300060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alienBeige_climb2
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 128
+        width: 66
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5305410000000000800000000000000
+      internalID: 21300062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alienBeige_duck
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 53
+        width: 67
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06305410000000000800000000000000
+      internalID: 21300064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alienBeige_hurt
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 33
+        width: 67
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26305410000000000800000000000000
+      internalID: 21300066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alienBeige_jump
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 223
+        width: 66
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46305410000000000800000000000000
+      internalID: 21300068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alienBeige_stand
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 126
+        width: 66
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66305410000000000800000000000000
+      internalID: 21300070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alienBeige_swim1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 218
+        width: 69
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86305410000000000800000000000000
+      internalID: 21300072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alienBeige_swim2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 412
+        width: 70
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6305410000000000800000000000000
+      internalID: 21300074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alienBeige_walk1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 125
+        width: 68
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6305410000000000800000000000000
+      internalID: 21300076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alienBeige_walk2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 316
+        width: 70
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6305410000000000800000000000000
+      internalID: 21300078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
