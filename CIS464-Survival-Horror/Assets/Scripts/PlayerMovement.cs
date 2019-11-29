@@ -6,11 +6,13 @@ public class PlayerMovement : MonoBehaviour
 {
     public float speed = 1f;
     public Rigidbody2D rigidbody;
+    public CharacterRender renderer; 
     // Start is called before the first frame update
     void Awake()
     {
         rigidbody = GetComponent<Rigidbody2D>();
-    }
+        renderer = GetComponentInChildren<CharacterRender>(); 
+   }
 
     // Update is called once per frame
     void Update()
@@ -22,8 +24,9 @@ public class PlayerMovement : MonoBehaviour
 
         var target = (new Vector2(x, y) * speed);
 
+        Vector2 move = target * speed; 
         Vector2 next = current + target * Time.fixedDeltaTime;
-
+        renderer.SetSprite(move); 
         rigidbody.MovePosition(next); 
 
     }
