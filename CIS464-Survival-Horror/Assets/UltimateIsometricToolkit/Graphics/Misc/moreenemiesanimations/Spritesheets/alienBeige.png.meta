@@ -1,129 +1,20 @@
 fileFormatVersion: 2
 guid: 38b05f1623b538d4182eba5009550217
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 21300000
-    second: alienBeige_0
-  - first:
-      213: 21300002
-    second: alienBeige_1
-  - first:
-      213: 21300004
-    second: alienBeige_2
-  - first:
-      213: 21300006
-    second: alienBeige_3
-  - first:
-      213: 21300008
-    second: alienBeige_4
-  - first:
-      213: 21300010
-    second: alienBeige_5
-  - first:
-      213: 21300012
-    second: alienBeige_6
-  - first:
-      213: 21300014
-    second: alienBeige_7
-  - first:
-      213: 21300016
-    second: alienBeige_8
-  - first:
-      213: 21300018
-    second: alienBeige_9
-  - first:
-      213: 21300020
-    second: alienBeige_10
-  - first:
-      213: 21300022
-    second: alienBeige_11
-  - first:
-      213: 21300024
-    second: alienBeige_12
-  - first:
-      213: 21300026
-    second: alienBeige_13
-  - first:
-      213: 21300028
-    second: alienBeige_14
-  - first:
-      213: 21300030
-    second: alienBeige_15
-  - first:
-      213: 21300032
-    second: alienBeige_16
-  - first:
-      213: 21300034
-    second: alienBeige_17
-  - first:
-      213: 21300036
-    second: alienBeige.png
-  - first:
-      213: 21300038
-    second: alienBeige_climb1.png
-  - first:
-      213: 21300040
-    second: alienBeige_climb2.png
-  - first:
-      213: 21300042
-    second: alienBeige_duck.png
-  - first:
-      213: 21300044
-    second: alienBeige_hurt.png
-  - first:
-      213: 21300046
-    second: alienBeige_jump.png
-  - first:
-      213: 21300048
-    second: alienBeige_stand.png
-  - first:
-      213: 21300050
-    second: alienBeige_swim1.png
-  - first:
-      213: 21300052
-    second: alienBeige_swim2.png
-  - first:
-      213: 21300054
-    second: alienBeige_walk1.png
-  - first:
-      213: 21300056
-    second: alienBeige_walk2.png
-  - first:
-      213: 21300058
-    second: alienBeige
-  - first:
-      213: 21300060
-    second: alienBeige_climb1
-  - first:
-      213: 21300062
-    second: alienBeige_climb2
-  - first:
-      213: 21300064
-    second: alienBeige_duck
-  - first:
-      213: 21300066
-    second: alienBeige_hurt
-  - first:
-      213: 21300068
-    second: alienBeige_jump
-  - first:
-      213: 21300070
-    second: alienBeige_stand
-  - first:
-      213: 21300072
-    second: alienBeige_swim1
-  - first:
-      213: 21300074
-    second: alienBeige_swim2
-  - first:
-      213: 21300076
-    second: alienBeige_walk1
-  - first:
-      213: 21300078
-    second: alienBeige_walk2
+  fileIDToRecycleName:
+    21300000: alienBeige
+    21300002: alienBeige_climb1
+    21300004: alienBeige_climb2
+    21300006: alienBeige_duck
+    21300008: alienBeige_hurt
+    21300010: alienBeige_jump
+    21300012: alienBeige_stand
+    21300014: alienBeige_swim1
+    21300016: alienBeige_swim2
+    21300018: alienBeige_walk1
+    21300020: alienBeige_walk2
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 9
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -178,7 +69,7 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   platformSettings:
-  - serializedVersion: 3
+  - serializedVersion: 2
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -189,7 +80,6 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -209,7 +99,6 @@ TextureImporter:
       tessellationDetail: -1
       bones: []
       spriteID: a5305410000000000800000000000000
-      internalID: 21300058
       vertices: []
       indices: 
       edges: []
@@ -230,7 +119,6 @@ TextureImporter:
       tessellationDetail: -1
       bones: []
       spriteID: c5305410000000000800000000000000
-      internalID: 21300060
       vertices: []
       indices: 
       edges: []
@@ -251,7 +139,6 @@ TextureImporter:
       tessellationDetail: -1
       bones: []
       spriteID: e5305410000000000800000000000000
-      internalID: 21300062
       vertices: []
       indices: 
       edges: []
@@ -272,7 +159,6 @@ TextureImporter:
       tessellationDetail: -1
       bones: []
       spriteID: 06305410000000000800000000000000
-      internalID: 21300064
       vertices: []
       indices: 
       edges: []
@@ -293,7 +179,6 @@ TextureImporter:
       tessellationDetail: -1
       bones: []
       spriteID: 26305410000000000800000000000000
-      internalID: 21300066
       vertices: []
       indices: 
       edges: []
@@ -314,7 +199,6 @@ TextureImporter:
       tessellationDetail: -1
       bones: []
       spriteID: 46305410000000000800000000000000
-      internalID: 21300068
       vertices: []
       indices: 
       edges: []
@@ -335,7 +219,6 @@ TextureImporter:
       tessellationDetail: -1
       bones: []
       spriteID: 66305410000000000800000000000000
-      internalID: 21300070
       vertices: []
       indices: 
       edges: []
@@ -356,7 +239,6 @@ TextureImporter:
       tessellationDetail: -1
       bones: []
       spriteID: 86305410000000000800000000000000
-      internalID: 21300072
       vertices: []
       indices: 
       edges: []
@@ -377,7 +259,6 @@ TextureImporter:
       tessellationDetail: -1
       bones: []
       spriteID: a6305410000000000800000000000000
-      internalID: 21300074
       vertices: []
       indices: 
       edges: []
@@ -398,7 +279,6 @@ TextureImporter:
       tessellationDetail: -1
       bones: []
       spriteID: c6305410000000000800000000000000
-      internalID: 21300076
       vertices: []
       indices: 
       edges: []
@@ -419,7 +299,6 @@ TextureImporter:
       tessellationDetail: -1
       bones: []
       spriteID: e6305410000000000800000000000000
-      internalID: 21300078
       vertices: []
       indices: 
       edges: []
@@ -428,12 +307,10 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 
-    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
-    secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
