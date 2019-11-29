@@ -15,12 +15,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnMouseDown()
     {
-        SelectionHandler.ClearActiveSelections();
 
-        this.activeSelection = true; // This will be important to display an interface options pertaining to a specific unit when it's selected 
-        ToggleSprite();
-        ShowUnitStats();
-        //PrintSelectedObjects();
     }
 
     void spawnProjectile()
