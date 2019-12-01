@@ -25,7 +25,7 @@ public class CharacterRender : MonoBehaviour
 
     public string[] runDirections = {
             "RN", "RNW", "RW", "RSW", "RS", "RSE", "RE", "RNE"
-    };
+    };  
 
     private void Awake()
     {
@@ -48,7 +48,7 @@ public class CharacterRender : MonoBehaviour
             lastDirection = GetDirection(direction, faceDirections.Length); 
         }
 
-        animator.Play(movementMap[lastDirection], faceDirections.Length);
+        animator.Play(movementMap[lastDirection]);//, faceDirections.Length);
     }
 
     public int GetDirection(Vector2 direction, int muxBit)
@@ -62,9 +62,9 @@ public class CharacterRender : MonoBehaviour
         }
 
         float steps = angle / (360f / muxBit);
-        Debug.Log(Mathf.FloorToInt(steps));
-        return 0;
-        //return Mathf.FloorToInt(steps); 
+       // Debug.Log(Mathf.FloorToInt(steps));
+       // return 0;
+        return Mathf.FloorToInt(steps); 
     }
 
 
