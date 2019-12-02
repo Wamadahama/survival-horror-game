@@ -11,7 +11,7 @@ public class MobSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        spawn();
+        //spawn();
     }
 
     // Update is called once per frame
@@ -20,7 +20,7 @@ public class MobSpawner : MonoBehaviour
 
     }
 
-    void spawn()
+    public void spawn()
     {
         Vector3 position = GetComponent<Transform>().position;
 
