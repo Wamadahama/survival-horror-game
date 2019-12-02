@@ -42,8 +42,8 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-       rigidbody = GetComponent<Rigidbody2D>();
-       renderer = GetComponentInChildren<CharacterRender>();
+        rigidbody = GetComponent<Rigidbody2D>();
+        renderer = GetComponent<CharacterRender>();// GetComponentInChildren<CharacterRender>();
     }
 
     // Update is called once per frame
