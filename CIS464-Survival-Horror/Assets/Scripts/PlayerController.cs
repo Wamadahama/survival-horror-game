@@ -5,17 +5,19 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public int Health = 100;
-    public GameObject[] inventory;
-    public int selectedItem = 0;
     public float speed = 1f;
     public Rigidbody2D rigidbody;
     public CharacterRender renderer;
-    public GameObject projectile; 
+
+
+    public GameObject projectile;
+    public float shootSpeed = 300;
+    Transform cameraTransform;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        cameraTransform = Camera.main.transform;
     }
 
     private void OnMouseDown()
@@ -24,7 +26,7 @@ public class PlayerController : MonoBehaviour
     }
 
     void spawnProjectile()
-    { 
+    {
 
         Vector3 shootDirection;
         shootDirection = Input.mousePosition;
@@ -32,31 +34,16 @@ public class PlayerController : MonoBehaviour
         shootDirection = Camera.main.ScreenToWorldPoint(shootDirection);
         shootDirection -= transform.position;
 
-
         GameObject spellcast = Instantiate(projectile, transform.position, Quaternion.Euler(new Vector2(0, 0)));
         var body = spellcast.GetComponent<Rigidbody2D>();
-        body.velocity = new Vector2(shootDirection.x * 5, shootDirection.y * 5); 
-
+        body.velocity = new Vector2(shootDirection.x * 5, shootDirection.y * 5);
     }
-
-    void switchItem()
-    {
-        if (selectedItem+1 > inventory.Length)
-        {
-            selectedItem = 0;
-        } else
-        {
-            selectedItem++; 
-        }
-    }
-
 
     // Start is called before the first frame update
     void Awake()
     {
         rigidbody = GetComponent<Rigidbody2D>();
         renderer = GetComponent<CharacterRender>();// GetComponentInChildren<CharacterRender>();
-
     }
 
     // Update is called once per frame
@@ -80,6 +67,5 @@ public class PlayerController : MonoBehaviour
         rigidbody.MovePosition(next);
 
     }
-
 
 }
