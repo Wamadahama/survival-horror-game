@@ -30,6 +30,9 @@ public class CharacterRender : MonoBehaviour
     private void Awake()
     {
         animator = GetComponent<Animator>();
+        //animator.Play(runDirections[0]);
+        //Debug.Log(animator.name);
+       
     }
 
 

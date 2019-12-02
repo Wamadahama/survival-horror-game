@@ -55,7 +55,8 @@ public class PlayerController : MonoBehaviour
     void Awake()
     {
         rigidbody = GetComponent<Rigidbody2D>();
-        renderer = GetComponentInChildren<CharacterRender>();
+        renderer = GetComponent<CharacterRender>();// GetComponentInChildren<CharacterRender>();
+
     }
 
     // Update is called once per frame
