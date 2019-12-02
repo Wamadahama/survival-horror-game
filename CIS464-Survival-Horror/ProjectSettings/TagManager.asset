@@ -8,6 +8,7 @@ TagManager:
   - Tree
   - RoadR
   - RoadL
+  - Spawner
   layers:
   - Default
   - TransparentFX

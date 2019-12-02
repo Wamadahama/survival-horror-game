@@ -9,7 +9,7 @@ public class EnemyBehavior : MonoBehaviour
 
     // These fields will be different for the different classes of enemies
     // Change them in the inspector
-    public float maxHealth = 20;
+    public float maxHealth = 100;
     public float currHealth = 100;
 
     public int damage = 10;
@@ -32,7 +32,7 @@ public class EnemyBehavior : MonoBehaviour
         gameManager = GameManager.Instance;
         transform = GetComponent<Transform>();
         rb = GetComponent<Rigidbody2D>();
-        Debug.Log(Time.fixedDeltaTime);
+        //Debug.Log(Time.fixedDeltaTime);
     }
 
     // Update is called once per frame
@@ -45,19 +45,27 @@ public class EnemyBehavior : MonoBehaviour
     void onDeath()
     {
         isAlive = false;
-     
+        GameManager.Instance.enemiesAlive--;
+        GameManager.Instance.zombiesKilled.incrementKillCount();
         Destroy(gameObject);
     }
 
     // Check to see if the unit made contact with the player
     void OnCollisionEnter2D(Collision2D other)
     {
-        Debug.Log(other.transform.name);
+        //Debug.Log(other.transform.name);
+
+        // If the other object is the player, we are now touching the player
+        if (string.Equals(other.transform.name, "Shot(Clone)"))
+        {
+            currHealth -= 20;
+            
+        }
 
         // If the other object is the player, we are now touching the player
         if (string.Equals(other.transform.name, "Player"))
         {
-
+            Debug.Log("blah");
             touchingPlayer = true;
         }
     }
@@ -80,8 +88,13 @@ public class EnemyBehavior : MonoBehaviour
             // If we're ready to attack, "attack" the player (subtract hitpoints = to damage)
             if (attackTimer <= 0)
             {
-                Debug.Log("We are touching the batman");
-                //gameManager.player.GetComponent<Player>().health -= damage;
+                // Basically what happens here is that the player gets a booboo when the zombie hits therrm
+                // so we're all like "awww shitt mannnn we gotta let a dude know that they're in trouble"
+                // So then we update the helath text by calling thePlayerGotHurtSoWeGottaUpdate
+                // and then the health text is updated
+                // Yeah, I write games
+                GameManager.Instance.player.GetComponent<PlayerController>().health -= damage;
+                GameManager.Instance.healthTextController.thePlayerGotHurtSoWeGottaUpdate();
                 attackTimer = attackSpeed;
             }
             // Otherwise increment timer
@@ -90,15 +103,6 @@ public class EnemyBehavior : MonoBehaviour
                 attackTimer -= Time.fixedDeltaTime;
             }
 
-        }
-    }
-
-    void attackedByPlayer()
-    {
-        if (touchingPlayer)
-        {
-            //currHealth -= gameManager.getPlayer().GetComponent<Player>().damage;
-            Debug.Log(currHealth);
         }
     }
 
@@ -115,13 +119,7 @@ public class EnemyBehavior : MonoBehaviour
 
         if (isAlive)
         {
-            
-            /*
-            if (player.isAttacking && player.cooldown <= 0)
-                attackedByPlayer();
-            else
-                attackPlayer();
-            */
+            attackPlayer();
 
             if (currHealth <= 0)
             {
@@ -149,7 +147,7 @@ public class EnemyBehavior : MonoBehaviour
                 }
 
                 movement = new Vector2(dx, dy);
-                Debug.Log(movement);
+                //Debug.Log(movement);
                 rb.MovePosition(rb.position + movement * movementSpeed * Time.fixedDeltaTime);
             }
         }

@@ -94,5 +94,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mobType: {fileID: 0}
-  quantity: 2
+  quantity: 0
   spawnRadius: 1

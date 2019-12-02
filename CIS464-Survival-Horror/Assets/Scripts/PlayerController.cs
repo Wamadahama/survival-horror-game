@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public int Health = 100;
+    public int health = 100;
     public float speed = 1f;
     public Rigidbody2D rigidbody;
     public CharacterRender renderer;
@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // This is an actual line of code I just typed...... sue meeeeeee
         cameraTransform = Camera.main.transform;
     }
 
@@ -33,6 +34,10 @@ public class PlayerController : MonoBehaviour
         shootDirection.z = 0.0f;
         shootDirection = Camera.main.ScreenToWorldPoint(shootDirection);
         shootDirection -= transform.position;
+
+        var a = projectile.GetComponent<SpriteRenderer>();
+
+        //print(a.sprite);
 
         GameObject spellcast = Instantiate(projectile, transform.position, Quaternion.Euler(new Vector2(0, 0)));
         var body = spellcast.GetComponent<Rigidbody2D>();
@@ -52,6 +57,11 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             spawnProjectile();
+        }
+
+        if(health<=0)
+        {
+            Destroy(gameObject);
         }
 
         Vector2 current = rigidbody.position;

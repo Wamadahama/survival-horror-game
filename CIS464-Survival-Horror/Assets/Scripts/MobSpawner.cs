@@ -11,7 +11,12 @@ public class MobSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //spawn();
+        
+    }
+
+    private void Awake()
+    {
+        spawn();
     }
 
     // Update is called once per frame
@@ -29,6 +34,7 @@ public class MobSpawner : MonoBehaviour
             Vector2 spawnLoc = new Vector2(position.x+Random.Range(-spawnRadius, spawnRadius), position.y+Random.Range(-spawnRadius, spawnRadius));
 
             GameObject enemy = (GameObject)Instantiate(mobType, new Vector3(spawnLoc.x, spawnLoc.y, -1), Quaternion.identity);
+            GameManager.Instance.enemiesAlive++; // New enemy in the scene bbbbbbbbbbbbbb wehhh i'm gonna cummmmeeeeeeeeeeeeeeeeeeeeee********* so hard right now
         }
     }
 }
