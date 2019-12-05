@@ -47,6 +47,11 @@ public class EnemyBehavior : MonoBehaviour
         isAlive = false;
         GameManager.Instance.enemiesAlive--;
         GameManager.Instance.zombiesKilled.incrementKillCount();
+
+        if (GameManager.Instance.enemiesAlive == 0)
+        {
+            GameManager.Instance.currentWave.NextWave();
+        }
         Destroy(gameObject);
     }
 

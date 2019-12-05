@@ -16,7 +16,7 @@ public class MobSpawner : MonoBehaviour
 
     private void Awake()
     {
-        spawn();
+        //spawn();
     }
 
     // Update is called once per frame
@@ -30,7 +30,8 @@ public class MobSpawner : MonoBehaviour
         Vector3 position = GetComponent<Transform>().position;
 
         for (int i = 0; i < quantity; i++)
-        { 
+        {
+            Debug.Log("Test");
             Vector2 spawnLoc = new Vector2(position.x+Random.Range(-spawnRadius, spawnRadius), position.y+Random.Range(-spawnRadius, spawnRadius));
 
             GameObject enemy = (GameObject)Instantiate(mobType, new Vector3(spawnLoc.x, spawnLoc.y, -1), Quaternion.identity);

@@ -14,6 +14,11 @@ public class Wave : MonoBehaviour
 
     private void Awake()
     {
+        
+    }
+
+    public void startTheInvasion()
+    {
         MobSpawner[] spawners = GetComponentsInChildren<MobSpawner>();
 
         foreach (MobSpawner spawner in spawners)
@@ -24,10 +29,10 @@ public class Wave : MonoBehaviour
 
     public void NextWave()
     {
+        //Debug.Log("What the fuck");
         if (next != null)
         {
-            Debug.Log(next.name);
-            next.GetComponent<Wave>().Awake();
+            GameManager.Instance.currentWave = next.GetComponent<Wave>();
         }
         else
         {
@@ -40,10 +45,6 @@ public class Wave : MonoBehaviour
     void Update()
     {
         // Check to see if all enmies are dead, if they are, start the next wave
-        if(GameManager.Instance.enemiesAlive==0)
-        {
-            
-            NextWave();
-        }
+       
     }
 }
