@@ -38,7 +38,7 @@ public class PlayerController : MonoBehaviour
         var a = projectile.GetComponent<SpriteRenderer>();
 
         //print(a.sprite);
-
+       
         GameObject spellcast = Instantiate(projectile, transform.position, Quaternion.Euler(new Vector2(0, 0)));
         var body = spellcast.GetComponent<Rigidbody2D>();
         body.velocity = new Vector2(shootDirection.x * 5, shootDirection.y * 5);
@@ -56,6 +56,7 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1"))
         {
+            //GameManager.Instance.playerAttack[Random.Range(0, 3)].Play();
             spawnProjectile();
         }
 

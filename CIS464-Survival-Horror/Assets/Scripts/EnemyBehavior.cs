@@ -101,6 +101,8 @@ public class EnemyBehavior : MonoBehaviour
                 GameManager.Instance.player.GetComponent<PlayerController>().health -= damage;
                 GameManager.Instance.healthTextController.thePlayerGotHurtSoWeGottaUpdate();
                 attackTimer = attackSpeed;
+
+                GameManager.Instance.playerHurt[Random.Range(0,3)].Play();
             }
             // Otherwise increment timer
             else

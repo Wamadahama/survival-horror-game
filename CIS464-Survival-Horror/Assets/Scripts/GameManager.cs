@@ -8,6 +8,10 @@ public class GameManager : Singleton<GameManager>
     public GameObject startWavePrompt;
     public GameObject pauseMenu;
 
+    public AudioSource[] playerHurt = new AudioSource[4];
+    public AudioSource[] playerAttack = new AudioSource[4];
+    public AudioSource[] enemyDead = new AudioSource[4];
+
     public Wave currentWave;
     public WaveNumberController waveNumberController;
     public HealthTextController healthTextController;
