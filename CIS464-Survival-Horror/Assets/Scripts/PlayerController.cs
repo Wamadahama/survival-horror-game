@@ -56,7 +56,7 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1"))
         {
-            //GameManager.Instance.playerAttack[Random.Range(0, 3)].Play();
+            GameManager.Instance.playerAttack[Random.Range(0, 3)].Play();
             spawnProjectile();
         }
 

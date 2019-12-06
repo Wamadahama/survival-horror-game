@@ -13,6 +13,7 @@ public class EnemyBehavior : MonoBehaviour
     public float currHealth = 100;
 
     public int damage = 10;
+    public int dropChance = 5; // 1 in dropChance chance of dropping an item
 
     public float attackSpeed = 1;
     public float movementSpeed = 1;
@@ -48,11 +49,19 @@ public class EnemyBehavior : MonoBehaviour
         GameManager.Instance.enemiesAlive--;
         GameManager.Instance.zombiesKilled.incrementKillCount();
 
+        int areWeDroppingAPotion = Random.Range(0, dropChance);
+        Vector3 pos = gameObject.transform.position;
+
         if (GameManager.Instance.enemiesAlive == 0)
         {
             GameManager.Instance.currentWave.NextWave();
         }
         Destroy(gameObject);
+        Debug.Log(areWeDroppingAPotion);
+        if (areWeDroppingAPotion == 0)
+        {
+            GameObject potion = (GameObject)Instantiate(Resources.Load<GameObject>("HealthPotion"), new Vector3(pos.x, pos.y, -1), Quaternion.identity);
+        }
     }
 
     // Check to see if the unit made contact with the player
