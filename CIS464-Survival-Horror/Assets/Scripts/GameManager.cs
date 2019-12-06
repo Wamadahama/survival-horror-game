@@ -11,6 +11,7 @@ public class GameManager : Singleton<GameManager>
     public AudioSource[] playerHurt = new AudioSource[4];
     public AudioSource[] playerAttack = new AudioSource[4];
     public AudioSource[] enemyDead = new AudioSource[4];
+    public AudioSource music;
 
     public Wave currentWave;
     public WaveNumberController waveNumberController;
